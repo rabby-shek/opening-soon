@@ -1,7 +1,7 @@
  // Background slider logic
     let index = 0;
     const sliderTrack = document.getElementById('sliderTrack');
-    const totalSlides = 3;
+    const totalSlides = 6;
 
     setInterval(() => {
       index = (index + 1) % totalSlides;
