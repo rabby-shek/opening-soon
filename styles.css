@@ -132,7 +132,7 @@ html, body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.603); /* Adjust 0.5 to control darkness */
+  background: rgba(0, 0, 0, 0.753); /* Adjust 0.5 to control darkness */
   z-index: 1;
 }
 
