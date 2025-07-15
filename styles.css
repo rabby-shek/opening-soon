@@ -115,10 +115,10 @@ html, body {
 /* Desktop background images (default) */
 .slide1 { background-image: url('./images/desktop/slider-1.png'); }
 .slide2 { background-image: url('./images/desktop/slider-2.png'); }
-.slide3 { background-image: url('./images/desktop/Slider-3.png'); }
-.slide4 { background-image: url('./images/desktop/Slider-4.png'); }
-.slide5 { background-image: url('./images/desktop/Slider-5.png'); }
-.slide6 { background-image: url('./images/desktop/Slider-6.png'); }
+.slide3 { background-image: url('./images/desktop/slider-3.png'); }
+.slide4 { background-image: url('./images/desktop/slider-4.png'); }
+.slide5 { background-image: url('./images/desktop/slider-5.png'); }
+.slide6 { background-image: url('./images/desktop/slider-6.png'); }
 
 /* ===================== MEDIA QUERIES ===================== */
 
@@ -144,8 +144,8 @@ html, body {
     padding: 0 30px;
   }
 
-  .slide1 { background-image: url('./images/mobile/slide-1.png'); }
-  .slide2 { background-image: url('./images/mobile/slide-2.png'); }
+  .slide1 { background-image: url('./images/mobile/Slide-1.png'); }
+  .slide2 { background-image: url('./images/mobile/Slide-2.png'); }
   .slide3 { background-image: url('./images/mobile/Slide-3.png'); }
   .slide4 { background-image: url('./images/mobile/Slide-4.png'); }
   .slide5 { background-image: url('./images/mobile/Slide-5.png'); }
