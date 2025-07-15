@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Station</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Background Slider -->
+  <div class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+  </div>
+
+  <!-- Foreground Content -->
+  <div class="content">
+    <img class="logo" src="./images/The_Station_Logo_1_.svg" alt="The Station Logo" />
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">ONE STOP. EVERY TICKET</span>
+      </span>
+    </h1>
+
+    <div class="subtext">YOUR GATEWAY TO GREAT EXPERIENCES</div>
+    <div class="coming-soon">Launching Soon</div>
+  </div>
+
+  <script src="./scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml6 .letter',
+        translateY: ["1.1em", 0],
+        translateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i
+      }).add({
+        targets: '.ml6',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+
+  </script>
+</body>
+
+</html>
